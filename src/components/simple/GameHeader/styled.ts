@@ -28,7 +28,7 @@ const GameHeader = styled.div<IGameHeaderProps>`
 	height: 40px;
 	z-index: 1;
 `
-const Text = styled.div`
+const Text = styled.h2`
 	color: ${({ theme }) => theme.colors.font};
 	font-weight: 800;
 	font-style: italic;

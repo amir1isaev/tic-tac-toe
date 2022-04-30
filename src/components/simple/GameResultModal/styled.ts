@@ -43,8 +43,8 @@ const Icon = styled.div<IIconProps>`
 	background-color: ${({ bg }) => bg};
 `
 
-const Text = styled.div<ITextProps>`
-	color: ${({ theme }) => theme.colors.font};
+const Text = styled.h3<ITextProps>`
+	color: ${({ theme }) => theme.colors.white};
 	font-weight: 800;
 	font-style: italic;
 	font-size: 22px;
