@@ -1,4 +1,4 @@
-import { useCommonContext } from 'core/hooks'
+import { useGameApi } from 'core/hooks'
 import { ISquare } from 'core/interfaces'
 import React, { FC, memo } from 'react'
 import { useTheme } from 'styled-components'
@@ -9,7 +9,7 @@ import * as S from './styled'
 const Square: FC<IProps> = memo(p => {
 	const { item, onClick } = p
 	const theme = useTheme()
-	const context = useCommonContext()
+	const context = useGameApi()
 	const color = item.isX ? theme.colors.primary : theme.colors.purple
 
 	return (

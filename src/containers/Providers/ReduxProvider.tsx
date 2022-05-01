@@ -1,6 +1,6 @@
 import { Provider } from 'react-redux'
 import React, { FC, ReactNode } from 'react'
-import { store } from 'core/redux'
+import { store } from 'core/store'
 
 const ReduxProvider: FC<IProps> = ({ children }) => {
 	return <Provider store={store}>{children}</Provider>

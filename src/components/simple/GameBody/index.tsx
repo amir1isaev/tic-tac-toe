@@ -1,11 +1,11 @@
-import { useCommonContext } from 'core/hooks'
+import { useGameApi } from 'core/hooks'
 import React, { FC } from 'react'
 import GameResultModal from '../GameResultModal'
 import Square from '../Square'
 import * as S from './styled'
 
 const GameBody: FC<IProps> = () => {
-	const context = useCommonContext()
+	const context = useGameApi()
 
 	return (
 		<S.GameBody>

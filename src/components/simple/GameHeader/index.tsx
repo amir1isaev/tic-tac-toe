@@ -1,5 +1,5 @@
 import { gameConstants } from 'core/constants'
-import { useCommonContext } from 'core/hooks'
+import { useGameApi } from 'core/hooks'
 import React, { FC } from 'react'
 import { useTheme } from 'styled-components'
 import O from '../O'
@@ -8,7 +8,7 @@ import * as S from './styled'
 
 const GameHeader: FC<IProps> = () => {
 	const theme = useTheme()
-	const context = useCommonContext()
+	const context = useGameApi()
 
 	const isShow = context!.isDraw || context!.winner
 

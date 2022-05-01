@@ -2,13 +2,13 @@ import { Button } from 'amirisaevui'
 import { useTheme } from 'styled-components'
 import * as S from './styled'
 import { gameConstants } from 'core/constants'
-import { useCommonContext } from 'core/hooks'
+import { useGameApi } from 'core/hooks'
 import React, { FC } from 'react'
 import O from '../O'
 import X from '../X'
 
 const GameResultModal: FC<IProps> = () => {
-	const context = useCommonContext()
+	const context = useGameApi()
 	const theme = useTheme()
 
 	const getIcon = !context?.isXNext ? <X size={20} color={theme.colors.white} /> : <O size={20} color={theme.colors.white} />
